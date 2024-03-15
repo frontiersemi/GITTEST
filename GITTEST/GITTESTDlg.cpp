@@ -65,6 +65,7 @@ BEGIN_MESSAGE_MAP(CGITTESTDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_BN_CLICKED(IDC_BUTTON_RAFTINTERFERENCE, &CGITTESTDlg::OnBnClickedButtonRaftinterference)
 END_MESSAGE_MAP()
 
 
@@ -153,3 +154,9 @@ HCURSOR CGITTESTDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+
+void CGITTESTDlg::OnBnClickedButtonRaftinterference()
+{
+	AfxMessageBox(_T("RAFT Interference"));
+}
